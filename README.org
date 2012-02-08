@@ -1,0 +1,12 @@
+* Codility Demonstration Programming Problems
+
+I've taken a crack at a few of the [[http://codility.com/][Codility]] algorithms problems,
+starting with 'equi', which you can read more about [[http://blog.codility.com/2011/03/solutions-for-task-equi.html][here]].
+
+Each problem will include a unit test or two for starters, and the
+test suites will hopefully grow from there.
+
+The testing criteria also include requirements that the
+implementations submitted fall within certain complexity bounds. I'll
+begin by focussing on correct, tested implementations, and only then
+worry about algorithmic efficiency.
