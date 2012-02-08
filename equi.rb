@@ -24,8 +24,13 @@ def equi(a)
 end
 
 class TestEqui < Test::Unit::TestCase
-  def test_equi
+  def test_01
     sample_array = [-7, 1, 5, 2, -4, 3, 0]
+    expected = equi(sample_array)
+    assert_equal expected, 3
+  end
+  def test_02
+    sample_array = [1, 2, 3, 4, 3, 2, 1]
     expected = equi(sample_array)
     assert_equal expected, 3
   end
