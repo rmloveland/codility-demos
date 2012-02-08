@@ -9,18 +9,15 @@ require 'test/unit'
 def equi(a)
   ## Array -> Int
   index = a.length-1
-  results = []
   while index > 0
     first, rest = a[0..index-1], a[index+1..a.length-1]
     sum_first, sum_rest = first.reduce(:+), rest.reduce(:+)
     if sum_first == sum_rest
-      results.push index
-    elsif first.nil? or rest.nil?
-      results.push index
+      return index
     end
     index -= 1
   end
-  results[0]
+  -1
 end
 
 class TestEqui < Test::Unit::TestCase
