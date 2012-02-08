@@ -10,9 +10,7 @@ def equi(a)
   ## Array -> Int
   index = a.length-1
   while index > 0
-    first, rest = a[0..index-1], a[index+1..a.length-1]
-    sum_first, sum_rest = first.reduce(:+), rest.reduce(:+)
-    if sum_first == sum_rest
+    if a[0..index-1].reduce(:+) == a[index+1..a.length-1].reduce(:+)
       return index
     end
     index -= 1
